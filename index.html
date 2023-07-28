@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight booking websites</title>
+    <link rel="icon" href="https://img.freepik.com/free-vector/detailed-travel-logo_23-2148616611.jpg?w=740&t=st=1689144191~exp=1689144791~hmac=d85b622ece1b9c2cfdef14c30bd28477e6f06d0837f86c5238f14d457cce67e4">
+     <link rel="stylesheet" href="style.css">
+
+
+     <!-- <link rel="stylesheet" href="/agile prectice/link/bootstrap min.css"> -->
+
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+<!-- FontAwesome 6.2.0 CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- (Optional) Use CSS or JS implementation -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+    integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<style>
+
+
+</style>
+<body>
+ <nav class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand fs-3 fw-bold" href="#">Royal<span class="text-danger">Yatra</span> </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
+                <li class="nav-item ticket-booking-icon_1">
+                    <a class=" ps-4 active ticket-booking-icon_1" href="#home" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item ticket-booking-icon_1">
+                    <a class=" ps-4 ticket-booking-icon_1" href="#help" aria-current="page">About <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item ticket-booking-icon_1">
+                    <a class=" ps-4 ticket-booking-icon_1" href="#tickets" aria-current="page">Services <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="nav-item ticket-booking-icon_1">
+                    <a class=" ps-4 ticket-booking-icon_1" href="#offers" aria-current="page">Offers </a>
+                </li>
+               
+                <li class="nav-item dropdown ms-auto ticket-booking-icon_1">
+                    <a class=" dropdown-toggle ps-4 ticket-booking-icon_1" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">What You Want</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Flight</a>
+                        <a class="dropdown-item" href="#">Hotel</a>
+                        <a class="dropdown-item" href="#">Homestyle</a>
+                        <a class="dropdown-item" href="#">Holiday Packages</a>
+                        <a class="dropdown-item" href="#">Trains</a>
+                        <a class="dropdown-item" href="#">Buses</a>
+                        <a class="dropdown-item" href="#">Cabs</a>
+                        <a class="dropdown-item" href="#">Forex</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="d-flex my-2 my-lg-0">
+                <input class="form-control me-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Go</button>
+            </form>
+        </div>
+   </div>
+ </nav>
+ 
+<div id="home"></div>
+ <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light" style="margin-top: 40px;">
+   <div class="carousel-indicators">
+     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+     <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+   </div>
+   <div class="carousel-inner">
+     <div class="carousel-item active">
+       <img src="https://cdn.pixabay.com/photo/2017/08/10/07/25/airplane-2619434_1280.jpg" alt="" width="100%" height="550px">
+       <div class="container">
+         <div class="carousel-caption text-start">
+          <i> <h1 style="margin-top: -250px;">Make life Easy and  <span class="text-danger">Happy </span> </h1>
+           <p class="opacity-75">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis molestiae praesentium minus accusantium eligendi </p>
+           <p><a class="btn btn-lg btn-danger" href="#">Book Now</a></p></i>
+         </div>
+       </div>
+     </div>
+     <div class="carousel-item">
+       <img src="https://cdn.pixabay.com/photo/2020/05/25/17/03/travel-5219496_640.jpg" alt="" width="100%" height="550px">
+       <div class="container">
+         <div class="carousel-caption">
+         <i>  <h1><span class="text-danger">5 star</span>  luxury<span class="text-danger"> travelling </span>  place</h1>
+           <p>Some representative placeholder content for the second slide of the carousel.</p>
+           <p><a class="btn btn-lg btn-danger" href="#">Learn more</a></p></i>
+         </div>
+       </div>
+     </div>
+     <div class="carousel-item">
+       <img src="https://cdn.pixabay.com/photo/2017/03/27/13/51/air-force-2178863_640.jpg" alt="" width="100%" height="550px">
+       <div class="container">
+         <div class="carousel-caption text-end">
+         <i>  <h1 class="text">Gold and <span class="text-danger"> boundless</span> travel</h1>
+           <p>Some representative placeholder content for the third slide of this carousel.</p>
+           <p><a class="btn btn-lg btn-danger" href="#">Book Now</a></p></i>
+         </div>
+       </div>
+     </div>
+   </div>
+   <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Previous</span>
+   </button>
+   <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+     <span class="visually-hidden">Next</span>
+   </button>
+ </div>
+ 
+
+
+ <din id="tickets"></din>
+  <!-- ========== Start Section_2 ========== -->
+  <div style="background: linear-gradient(180deg, rgba(0,0,0,0.9949229691876751) 0%, rgba(203,46,46,1) 100%);padding-top: 140px; padding-bottom: 50px;">
+  <div class="container bg-white shadow position-relative rounded-5" >
+    <div class="row pt-5  shadow">
+        <div class="col-8 pt-5 ">
+            <div class="btn-group " role="group" aria-label="Basic checkbox toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btncheck1" autocomplete="off">
+                <label class="btn btn-outline-danger" for="btncheck1">OneWay</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btncheck2" autocomplete="off">
+                <label class="btn btn-outline-danger" for="btncheck2">RoundTrip</label>
+              
+                <input type="radio" class="btn-check" name="btnradio" id="btncheck3" autocomplete="off">
+                <label class="btn btn-outline-danger" for="btncheck3">Multi City</label>
+              </div>
+              
+        </div>
+        <div class="col-4 pt-5 d-none d-md-flex">
+            <p class="btn btn-outline-danger">Book International and Domestic Flights</p>
+          </div>
+    </div>
+
+<div class="row text-center">
+ <div class="col-md-3 col-6 border p-3">
+    <p >Form</p>
+    <h3>Delhi</h3>
+    <p>DEL,Delhi Airport India</p>
+    
+ </div>
+ <div class="col-md-3 col-6 border">
+    <p>To</p>
+    <h3>Bengaluru </h3>
+    <p>BLR, Bengaluru International Airport India</p>
+ </div>
+
+ <div class="col-md-3 col-6 border p-3">
+ <div class="dropdown open">
+    <button class="btn  dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+               Departure
+            </button>
+    <div class="dropdown-menu" aria-labelledby="triggerId">
+        <a class="dropdown-item" href="#"><input type="date" name="" id=""></a>
+       
+    </div>
+ </div>
+
+
+   <h3> <strong>12</strong> jul'23</h3>
+   <span>Wednesday</span>
+
+ </div>
+
+
+
+ <div class="col-md-3 col-6 ">
+ <div class="dropdown open">
+    <button class="btn  dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+           Travellers <span class="d-none d-md-inline">& Class</span> 
+            </button>
+    <div class="dropdown-menu" aria-labelledby="triggerId">
+        <a class="dropdown-item" href="#"><strong> ADULTS (12Y+1)</strong></a>
+        <a class="dropdown-item" href="#"> on the day of travel</a>
+        <a class="dropdown-item" href="#"> 
+            
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+          <input type="radio" class="btn-check" name="btnradio" id="btncheck4" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btncheck4">1</label>
+        
+          <input type="radio" class="btn-check" name="btnradio" id="btncheck5" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btncheck5">2</label>
+        
+          <input type="radio" class="btn-check" name="btnradio" id="btncheck6" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btncheck6">3</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btncheck6" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btncheck6">4</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btncheck6" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btncheck6">5</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btncheck6" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btncheck6">6</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btncheck6" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btncheck6">7</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btncheck6" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btncheck6">8</label>
+        </div></a>
+
+        <a class="dropdown-item mt-4" href="#"><strong>CHILDREN (2Y - 12Y)</strong></a>
+        <a class="dropdown-item" href="#">on the day of travel</a>
+        <a class="dropdown-item" href="#"> <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btncheck4" autocomplete="off">
+            <label class="btn btn-outline-danger" for="btncheck4">1</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="btncheck5" autocomplete="off">
+            <label class="btn btn-outline-danger" for="btncheck5">2</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="btncheck6" autocomplete="off">
+            <label class="btn btn-outline-danger" for="btncheck6">3</label>
+            <input type="radio" class="btn-check" name="btnradio" id="btncheck6" autocomplete="off">
+            <label class="btn btn-outline-danger" for="btncheck6">4</label>
+            <input type="radio" class="btn-check" name="btnradio" id="btncheck6" autocomplete="off">
+            <label class="btn btn-outline-danger" for="btncheck6">5</label>
+            
+          </div></a>
+
+          <a class="dropdown-item" href="#"> on the day of travel</a>
+       
+    </div>
+ </div>
+
+
+   <h3> <strong>19</strong> Travellers</h3>
+   <span>Economy/Premium Economy</span>
+
+ </div>
+
+ 
+</div>
+<!-- 2  -->
+<div class="row text-center">
+ <div class="col-md-3 col-6 border p-3">
+    <p >Form</p>
+    <h3>Bengaluru</h3>
+    <p>DEL,Delhi Airport India</p>
+    
+ </div>
+ <div class="col-md-3 col-6 border">
+    <p>To</p>
+    <h3> Select City </h3>
+    <p>BLR, Bengaluru International Airport India</p>
+ </div>
+
+ <div class="col-md-3 col-6 border p-3">
+ <div class="dropdown open">
+    <button class="btn  dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+               Departure
+            </button>
+    <div class="dropdown-menu" aria-labelledby="triggerId">
+        <a class="dropdown-item" href="#"><input type="date" name="" id=""></a>
+       
+    </div>
+ </div>
+
+
+   <h3> <strong>14</strong> jul'23</h3>
+   <span>Friday</span>
+
+ </div>
+
+
+
+ <div class="col-md-3 col-6 ">
+ <div class="dropdown open">
+    <button class="btn  dropdown-toggle" type="button" id="triggerId" data-bs-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+           Travellers <span class="d-none d-md-inline">& Class</span> 
+            </button>
+    <div class="dropdown-menu" aria-labelledby="triggerId">
+        <a class="dropdown-item" href="#"><strong> ADULTS (12Y+1)</strong></a>
+        <a class="dropdown-item" href="#"> on the day of travel</a>
+        <a class="dropdown-item" href="#"> 
+            
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+          <input type="radio" class="btn-check" name="btnradio" id="btncheck4" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btncheck4">1</label>
+        
+          <input type="radio" class="btn-check" name="btnradio" id="btncheck5" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btncheck5">2</label>
+        
+          <input type="radio" class="btn-check" name="btnradio" id="btncheck6" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btncheck6">3</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btncheck6" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btncheck6">4</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btncheck6" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btncheck6">5</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btncheck6" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btncheck6">6</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btncheck6" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btncheck6">7</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btncheck6" autocomplete="off">
+          <label class="btn btn-outline-danger" for="btncheck6">8</label>
+        </div></a>
+
+        <a class="dropdown-item mt-4" href="#"><strong>CHILDREN (2Y - 12Y)</strong></a>
+        <a class="dropdown-item" href="#">on the day of travel</a>
+        <a class="dropdown-item" href="#"> <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btncheck4" autocomplete="off">
+            <label class="btn btn-outline-danger" for="btncheck4">1</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="btncheck5" autocomplete="off">
+            <label class="btn btn-outline-danger" for="btncheck5">2</label>
+          
+            <input type="radio" class="btn-check" name="btnradio" id="btncheck6" autocomplete="off">
+            <label class="btn btn-outline-danger" for="btncheck6">3</label>
+            <input type="radio" class="btn-check" name="btnradio" id="btncheck6" autocomplete="off">
+            <label class="btn btn-outline-danger" for="btncheck6">4</label>
+            <input type="radio" class="btn-check" name="btnradio" id="btncheck6" autocomplete="off">
+            <label class="btn btn-outline-danger" for="btncheck6">5</label>
+            
+          </div></a>
+
+          <a class="dropdown-item" href="#"> on the day of travel</a>
+       
+    </div>
+ </div>
+
+
+  <button class="btn btn-outline-danger">+ADD ANOTHER CITY</button>
+ </div>
+
+
+
+</div>
+<div class="row py-4 fw-bold" style="background: rgb(223, 222, 222);">
+  <div class="col">Select A Fare Type</div>
+ <div class="col"> <input type="radio" name="flight" value="Ragular fares">Ragular fares</div>
+ <div class="col"> <input type="radio" name="flight" value="Ragular fares">Armed Forces Fares</div>
+ <div class="col d-none d-md-flex"> <input type="radio" name="flight" value="Ragular fares">Student Fars</div>
+ <div class="col d-none d-md-flex"> <input type="radio" name="flight" value="Ragular fares">Senior Citizen Fars</div>
+ <div class="col d-none d-md-flex"> <input type="radio" name="flight" value="Ragular fares">Doctor & Nurses Fares</div>
+ 
+   
+    
+
+</div>
+
+<div class=" ">
+<div class="row text-center  shadow position-absolute w-75 bg-white rounded-5 pt-3" style="    top: -47px;
+left: 69px;">
+  <div class="col ticket-booking-icon">
+    <i class="fa-solid fa-jet-fighter text-danger fs-4 " ></i>
+    <p>Flights</p>
+  </div>
+  <div class="col ticket-booking-icon">
+    <i class="fa-solid fa-hotel fs-4 "></i>
+    <p>Hotels</p>
+  </div>
+  <div class="col ticket-booking-icon">
+    <i class="fa-solid fa-house fs-4 "></i>
+    <p>HomeStyles</p>
+  </div>
+  <div class="col ticket-booking-icon d-none d-md-block">
+    <i class="fa-solid fa-gifts fs-4 "></i>
+    <p>Holiday Packages</p>
+  </div>
+  <div class="col ticket-booking-icon d-none d-md-block">
+    <i class="fa-solid fa-bus fs-4 "></i>
+    <p>Buses</p>
+  </div>
+  <div class="col ticket-booking-icon d-none d-lg-block">
+    <i class="fa-solid fa-train fs-4 "></i>
+    <p>Train</p>
+  </div>
+  <div class="col ticket-booking-icon d-none d-lg-block">
+    <i class="fa-solid fa-car fs-4 "></i>
+    <p>Cabs</p>
+  </div>
+</div>
+</div>
+
+  </div>
+  <div class="text-center mt-5 ">
+    <button class="btn  px-3 fs-5 fw-bold rounded-5 sec-2-btn" style="color:white; border: white; 
+background: radial-gradient(circle, rgba(36,8,8,1) 0%, rgba(242,12,12,0.9949229691876751) 0%, rgba(141,16,16,1) 75%);">SEARCH</button>
+  </div>
+</div>
+
+
+  <!-- ========== End Sectio_2n ========== -->
+ 
+
+
+  <!-- ========== Start Section-3 ========== -->
+<div id="help"></div>
+
+    <div class="container" style="margin-top:100px ;">
+      <h1 class="text-center ">Welcome to Royal<span class="text-danger">Yatra</span></h1>
+      <div class="bg-danger mx-auto rounded-circle" style="width: 300px ; height: 5px;"></div>
+      <div class="row pt-5">
+        <div class="col-lg-4 text-center se_3_box_main">
+          <img src="https://img.freepik.com/free-psd/flat-design-leisure-wildlife-template_23-2149849209.jpg?w=740&t=st=1689130937~exp=1689131537~hmac=5823952d88f516e9097cbc5c50350241f97efc6be240fc2de9d61a0ed9166ae0" alt="" width="140" height="140" class="rounded-circle">
+          <div class="se_3_box ">
+            <img src="https://img.freepik.com/free-vector/airplane-sky_1308-31202.jpg?size=626&ext=jpg" alt="" width="140" height="140" class="rounded-circle">
+          </div>
+          <h2 class="fw-normal mt-2 ms-1 text-center">Your Trip</h2>
+          <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+          <div class="learn-more learn-more-btn">
+            <span class="circle">
+              <span class="icon arrow"></span>
+              <span class="learn-more-text px-4">View&nbsp;All</span>
+
+
+            </span>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 text-center se_3_box_main">
+          <img src="https://cdn.pixabay.com/photo/2019/05/28/00/15/indoors-4234071_640.jpg" alt="" width="140" height="140" class="rounded-circle">
+          <div class="se_3_box ">
+            <img src="https://img.freepik.com/free-vector/hotel-building-concept-illustration_114360-14039.jpg?size=626&ext=jpg" alt="" width="140" height="140" class="rounded-circle">
+          </div>
+          <h2 class="fw-normal mt-2 ms-1">Hotels</h2>
+          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+          <div class="learn-more learn-more-btn">
+            <span class="circle">
+              <span class="icon arrow"></span>
+              <span class="learn-more-text px-4">View&nbsp;All</span>
+
+
+            </span>
+          </div>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 text-center se_3_box_main">
+          <img src="https://img.freepik.com/free-photo/full-shot-smiley-woman-traveling-with-baggage_23-2149272182.jpg?size=626&ext=jpg" alt="" width="140" height="140" class="rounded-circle">
+          <div class="se_3_box ">
+            <img src="https://img.freepik.com/free-vector/large-set-transport_1308-26755.jpg?w=1380&t=st=1689133250~exp=1689133850~hmac=09e84add3be45567f8f0764db4972bb68c70ee8072337d4f7b54c9f6ba811950" alt="" width="140" height="140" class="rounded-circle">
+          </div>
+          <h2 class="fw-normal mt-2 ms-1">Transportation</h2>
+          <p>And lastly this, the third column of representative placeholder content.</p>
+          <div class="learn-more learn-more-btn">
+            <span class="circle">
+              <span class="icon arrow"></span>
+              <span class="learn-more-text px-4">View&nbsp;All</span>
+            </span>
+          </div>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </div>
+  
+  <!-- ========== End Section-3 ========== -->
+
+
+
+  <!-- ========== Start Section-4 ========== -->
+  <div id="offers"></div>
+  <div class="container shadow">
+  <h1 class="text-center " style="margin-top: 100px;">All  <span class="text-danger">Offers</span></h1>
+      <div class="bg-danger mx-auto rounded-circle" style="width: 100px ; height: 3px;"></div>
+<div id="myCarousel_2" class="carousel slide mb-6" data-bs-ride="carousel" data-bs-theme="light" style="margin-top: 50px;">
+  
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#myCarousel_2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#myCarousel_2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#myCarousel_2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="row">
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <img src="https://img.freepik.com/premium-psd/travel-agency-flyer-template-with-airplane-ticket-boarding-pass_181345-172.jpg?size=626&ext=jpg" class="img-fluid rounded-start" alt="Card title" class="img-fluid my-auto">
+              </div>
+              <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fw-light">DOM FLIGHTS</p>
+                <h4 class="card-title">Grab Up 60% OFF*</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <button class="btn btn-danger">BOOK NOW</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="col d-none d-md-block">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <img src="https://img.freepik.com/free-vector/vector-travel-banner-time-travel-poster_134830-1045.jpg?size=626&ext=jpg" class="img-fluid rounded-start" alt="Card title" class="img-fluid my-auto">
+              </div>
+              <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fw-light">DOM FLIGHTS</p>
+                <h4 class="card-title">Grab Up 40% OFF*</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <button class="btn btn-danger">BOOK NOW</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="col d-none d-lg-block">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <img src="https://img.freepik.com/free-psd/poster-travel-template-design_23-2149207058.jpg?size=626&ext=jpg" class="img-fluid rounded-start" alt="Card title" class="img-fluid my-auto">
+              </div>
+              <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fw-light">DOM FLIGHTS</p>
+                <h4 class="card-title">Grab Up 30% OFF*</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <button class="btn btn-danger">BOOK NOW</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+ 
+      <div class="row">
+        <div class="col d-none d-md-block">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <img src="https://img.freepik.com/free-vector/gradient-airline-company-poster-template_23-2149683590.jpg?size=626&ext=jpg" class="img-fluid rounded-start" alt="Card title" class="img-fluid my-auto">
+              </div>
+              <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fw-light">DOM FLIGHTS</p>
+                <h4 class="card-title">Grab Up 90% OFF*</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <button class="btn btn-danger">BOOK NOW</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="col d-none d-md-block">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <img src="https://img.freepik.com/free-psd/explore-world-flyer-template_23-2149182977.jpg?size=626&ext=jpg" class="img-fluid rounded-start" alt="Card title" class="img-fluid my-auto">
+              </div>
+              <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fw-light">DOM FLIGHTS</p>
+                <h4 class="card-title">Grab Up 10% OFF*</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <button class="btn btn-danger">BOOK NOW</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="col d-none d-lg-block">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <img src="https://img.freepik.com/free-psd/travel-agency-flyer-template_23-2148636203.jpg?size=626&ext=jpg" class="img-fluid rounded-start" alt="Card title" class="img-fluid my-auto">
+              </div>
+              <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fw-light">DOM FLIGHTS</p>
+                <h4 class="card-title">Grab Up 60% OFF*</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <button class="btn btn-danger">BOOK NOW</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <div class="row">
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <img src="https://img.freepik.com/premium-psd/travel-agency-flyer-template-with-airplane-ticket-boarding-pass_181345-172.jpg?size=626&ext=jpg" class="img-fluid rounded-start" alt="Card title" class="img-fluid my-auto">
+              </div>
+              <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fw-light">DOM FLIGHTS</p>
+                <h4 class="card-title">Grab Up 60% OFF*</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <button class="btn btn-danger">BOOK NOW</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="col d-none d-md-block">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <img src="https://img.freepik.com/free-vector/vector-travel-banner-time-travel-poster_134830-1045.jpg?size=626&ext=jpg" class="img-fluid rounded-start" alt="Card title" class="img-fluid my-auto">
+              </div>
+              <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fw-light">DOM FLIGHTS</p>
+                <h4 class="card-title">Grab Up 40% OFF*</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <button class="btn btn-danger">BOOK NOW</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="col d-none d-lg-block">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <img src="https://img.freepik.com/free-psd/poster-travel-template-design_23-2149207058.jpg?size=626&ext=jpg" class="img-fluid rounded-start" alt="Card title" class="img-fluid my-auto">
+              </div>
+              <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fw-light">DOM FLIGHTS</p>
+                <h4 class="card-title">Grab Up 30% OFF*</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <button class="btn btn-danger">BOOK NOW</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+ 
+      <div class="row">
+        <div class="col d-none d-md-block">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <img src="https://img.freepik.com/free-vector/gradient-airline-company-poster-template_23-2149683590.jpg?size=626&ext=jpg" class="img-fluid rounded-start" alt="Card title" class="img-fluid my-auto">
+              </div>
+              <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fw-light">DOM FLIGHTS</p>
+                <h4 class="card-title">Grab Up 90% OFF*</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <button class="btn btn-danger">BOOK NOW</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="col d-none d-md-block">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <img src="https://img.freepik.com/free-psd/explore-world-flyer-template_23-2149182977.jpg?size=626&ext=jpg" class="img-fluid rounded-start" alt="Card title" class="img-fluid my-auto">
+              </div>
+              <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fw-light">DOM FLIGHTS</p>
+                <h4 class="card-title">Grab Up 10% OFF*</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <button class="btn btn-danger">BOOK NOW</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="col d-none d-lg-block">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <img src="https://img.freepik.com/free-psd/travel-agency-flyer-template_23-2148636203.jpg?size=626&ext=jpg" class="img-fluid rounded-start" alt="Card title" class="img-fluid my-auto">
+              </div>
+              <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fw-light">DOM FLIGHTS</p>
+                <h4 class="card-title">Grab Up 60% OFF*</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <button class="btn btn-danger">BOOK NOW</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item ">
+      <div class="row">
+        <div class="col">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <img src="https://img.freepik.com/premium-psd/travel-agency-flyer-template-with-airplane-ticket-boarding-pass_181345-172.jpg?size=626&ext=jpg" class="img-fluid rounded-start" alt="Card title" class="img-fluid my-auto">
+              </div>
+              <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fw-light">DOM FLIGHTS</p>
+                <h4 class="card-title">Grab Up 60% OFF*</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <button class="btn btn-danger">BOOK NOW</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="col d-none d-md-block">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <img src="https://img.freepik.com/free-vector/vector-travel-banner-time-travel-poster_134830-1045.jpg?size=626&ext=jpg" class="img-fluid rounded-start" alt="Card title" class="img-fluid my-auto">
+              </div>
+              <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fw-light">DOM FLIGHTS</p>
+                <h4 class="card-title">Grab Up 40% OFF*</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <button class="btn btn-danger">BOOK NOW</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="col d-none d-lg-block">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <img src="https://img.freepik.com/free-psd/poster-travel-template-design_23-2149207058.jpg?size=626&ext=jpg" class="img-fluid rounded-start" alt="Card title" class="img-fluid my-auto">
+              </div>
+              <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fw-light">DOM FLIGHTS</p>
+                <h4 class="card-title">Grab Up 30% OFF*</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <button class="btn btn-danger">BOOK NOW</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+ 
+      <div class="row">
+        <div class="col d-none d-md-block">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <img src="https://img.freepik.com/free-vector/gradient-airline-company-poster-template_23-2149683590.jpg?size=626&ext=jpg" class="img-fluid rounded-start" alt="Card title" class="img-fluid my-auto">
+              </div>
+              <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fw-light">DOM FLIGHTS</p>
+                <h4 class="card-title">Grab Up 90% OFF*</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <button class="btn btn-danger">BOOK NOW</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="col d-none d-md-block">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <img src="https://img.freepik.com/free-psd/explore-world-flyer-template_23-2149182977.jpg?size=626&ext=jpg" class="img-fluid rounded-start" alt="Card title" class="img-fluid my-auto">
+              </div>
+              <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fw-light">DOM FLIGHTS</p>
+                <h4 class="card-title">Grab Up 10% OFF*</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <button class="btn btn-danger">BOOK NOW</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="col d-none d-lg-block">
+          <div class="card mb-3" style="max-width: 540px;">
+            <div class="row g-0">
+              <div class="col-md-4">
+              <img src="https://img.freepik.com/free-psd/travel-agency-flyer-template_23-2148636203.jpg?size=626&ext=jpg" class="img-fluid rounded-start" alt="Card title" class="img-fluid my-auto">
+              </div>
+              <div class="col-md-8">
+              <div class="card-body">
+                <p class="card-title fw-light">DOM FLIGHTS</p>
+                <h4 class="card-title">Grab Up 60% OFF*</h4>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                <button class="btn btn-danger">BOOK NOW</button>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+              </div>
+              </div>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel_2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon text-bg-danger py-4 rounded shadow" aria-hidden="true"></span>
+    <span class="visually-hidden ">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel_2" data-bs-slide="next">
+    <span class="carousel-control-next-icon text-bg-danger py-4 rounded shadow" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+
+
+  <!-- ========== End Section-4 ========== -->
+
+
+
+  <!-- ========== Start Section-5 ========== -->
+  
+<div class="container shadow" style="margin-top: 50px;">
+  <div class="row">
+    <div class="col">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+          <img src="https://img.freepik.com/free-psd/plane-mockup_1310-1053.jpg?size=626&ext=jpg" class=" rounded-start" alt="Card title"width="100px">
+          </div>
+          <div class="col-md-8">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Card title</h5> -->
+            <p class="card-text">Lorem ipsum dolor sit amet. </p>
+            <a href="#" class="badge bg-primary">Check Travel Guidelines</a>
+          </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+          <img src="https://img.freepik.com/free-icon/translate_318-674253.jpg?size=626&ext=jpg" class=" rounded-start" alt="Card title" width="100px">
+          </div>
+          <div class="col-md-8">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Card title</h5> -->
+            <p class="card-text">  We are now available in Hindi ! </p>
+            <a href="#" class="badge bg-primary">Check Travel Guidelines</a>
+          </div>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+          <img src="https://img.freepik.com/free-photo/air-ticket-flight-booking-concept_53876-133923.jpg?w=1060&t=st=1689138043~exp=1689138643~hmac=acec6cfd92a7c65a5d7cad7dc29565378dcd6da437dc5e95a74fa5859ca1a5ef" class=" rounded-start" alt="Card title" width="100px">
+          </div>
+          <div class="col-md-8">
+          <div class="card-body">
+            <!-- <h5 class="card-title">Card title</h5> -->
+            <p class="card-text">Lorem ipsum dolor sit amet. </p>
+            <a href="#" class="badge bg-primary">Check Travel Guidelines</a>
+          </div>
+          </div>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- ========== End Section-5 ========== -->
+
+
+
+
+<!-- ========== Start Section_6 ========== -->
+
+
+<div class="container mb-5" style="margin-top:100px; ">
+  <div class="row shadow py-3">
+  <div class="col-md-7 col-12 ps-3">
+    <img src="https://img.freepik.com/free-vector/appointment-booking-design_23-2148557730.jpg?size=626&ext=jpg" alt="" width="100px" class="float-start">
+    <span class="fs-1 fw-bold">Download App Now</span>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima, hic.</p>
+    <input class="form-control" type="number" placeholder="Enter your Number ">
+    <button class="btn btn-outline-danger fw-bold">GET APP LINK</button>
+  </div>
+  <div class="col-md-5 col-12 mt-5 mt-lg-0">
+    <div class="row">
+      <div class="col-4"><button class="btn btn-dark">
+        <div>GET IT ON </div> 
+        <img src="https://img.freepik.com/free-icon/google-play_318-566073.jpg?size=626&ext=jpg" alt="" width="30px" class="float-start">
+        <span><strong>Google</strong>Play</span>
+      </button> <br>
+      <button class="btn btn-dark mt-2 px-3">
+        <div>GET IT ON </div> 
+        <img src="https://img.freepik.com/free-icon/app-store_318-631416.jpg?size=626&ext=jpg" alt="" width="30px" class="float-start">
+        <span><strong>App</strong>Store</span>
+      </button></div>
+      <div class="col-6">
+        <img src="the_ganesh_dutt_qr (1).png" alt="" width="180px">
+      </div>
+    </div>
+    
+
+
+  </div>
+</div>
+</div>
+
+<!-- ========== End Section_6 ========== -->
+
+
+
+<!-- ========== Start Section_7 ========== -->
+<div class="container ">
+<div class="accordion " id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+      <img src="https://img.freepik.com/free-photo/air-ticket-flight-booking-concept_53876-133973.jpg?w=740&t=st=1689139720~exp=1689140320~hmac=fa193a430529bed6250da4def00418fd9c0a8a6893c906448d43be39828f642b" alt="" width="50px">
+      <div class="fw-bold text-success">Trip OneWay</div> <br>
+      <div><strong>Forex</strong>Lorem ipsum dolor sit amet consectetur adipisicing.</div>
+      <div type="button" class="btn btn-outline-primary ms-auto">Order Now --></button>
+    </button>
+      
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor natus quas voluptatem blanditiis. Labore nihil dolor cum voluptatum ullam, iure enim? Et veniam aliquam quisquam nesciunt! Ea aut sequi doloremque.
+      </div>
+    </div>
+  </div>
+  
+</div>
+</div>
+<div class="container mt-5" >
+ <div class="row">
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  
+    <strong>Get More Offers  <a href="https://ganeshdutt100.github.io/Ganesh_Portfolio/" target="_blank" class="text-danger text-decoration-none fw-bold "><i>Click me!</i></a></strong> You should check in on some of those fields below.
+  </div>
+ </div>
+</div>
+
+<div class="container mt-3" >
+ <div class="row">
+  <div class="alert alert-danger alert-dismissible fade show" role="alert">
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  
+    <strong>Go to Owner side</strong> <a href="https://ganeshdutt100.github.io/Ganesh_Portfolio/" target="_blank" class="text-danger text-decoration-none fw-bold "><i>Click me!</i></a>
+  </div>
+ </div>
+</div>
+
+
+
+<!-- ========== End Section_7 ========== -->
+
+  <!-- ========== Start Section-8 ========== -->
+  <div id="flights"></div>
+ <div class="container shadow p-5" style="margin-top: 100px; " >
+  <h1 class="text-center "> Your <span class="text-danger">Flights</span></h1>
+      <div class="bg-danger mx-auto rounded-circle" style="width: 100px ; height: 3px;"></div>
+  <div class="row mt-5 row-cols-3">
+    <div class="col">
+      <div class="row ">
+        <div class="col-12 col-md-2 "><img src="https://img.freepik.com/free-photo/silhouette-airplane-orange-sunset-sky-generated-by-ai_188544-24738.jpg?size=626&ext=jpg" alt="" width="50px " height="50px" class="rounded-circle float-start"></div>
+        <div class="col-md-9 col-12"> <div class="fw-bold">Chennai Flights</div>
+          <div class="d-none d-md-block">Lorem ipsum dolor sit amet.</div></div>
+      </div>
+      
+      
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="col-12 col-md-2"><img src="https://img.freepik.com/free-photo/beautiful-tropical-beach-sea_74190-6772.jpg?size=626&ext=jpg" alt="" width="50px " height="50px" class="rounded-circle float-start"></div>
+        <div class="col-md-9 col-12"> <div class="fw-bold">Goa Flights</div>
+        <div class="d-none d-md-block">Lorem ipsum dolor sit amet.</div></div>
+
+      </div>
+      
+      
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="col-12 col-md-2"><img src="https://img.freepik.com/free-photo/mumbai-skyline-skyscrapers-construction_469504-21.jpg?size=626&ext=jpg" alt="" width="50px " height="50px" class="rounded-circle float-start"></div>
+        <div class="col-md-9 col-12"> <div class="fw-bold">Mumbai  Flights</div>
+
+        <div class="d-none d-md-block">Lorem ipsum dolor sit amet.</div></div>
+
+      </div>
+      
+      
+    </div>
+  </div>
+  <div class="row mt-5 row-cols-3">
+    <div class="col">
+      <div class="row">
+        <div class="col-12 col-md-2"><img src="http://promos.makemytrip.com/images/50x50-Ooty-23052019.png" alt="" width="50px " height="50px" class="rounded-circle float-start"></div>
+        <div class="col-md-9 col-12"> <div class="fw-bold">Hyderabad Flights</div>
+        <div class="d-none d-md-block">Lorem ipsum dolor sit amet.</div></div>
+
+      </div>
+      
+      
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="col-12 col-md-2"><img src="https://promos.makemytrip.com/store/DelhiDT.JPG" alt="" width="50px " height="50px" class="rounded-circle float-start"></div>
+        <div class="col-md-9 col-12"> <div class="fw-bold">Delhi Flights</div>
+
+        <div class="d-none d-md-block">Lorem ipsum dolor sit amet.</div></div>
+
+      </div>
+      
+      
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="col-12 col-md-2"><img src="https://promos.makemytrip.com/store/PuneDT.JPG" alt="" width="50px " height="50px" class="rounded-circle float-start"></div>
+        <div class="col-md-9 col-12"> <div class="fw-bold">Pune Flights</div>
+
+        <div class="d-none d-md-block">Lorem ipsum dolor sit amet.</div></div>
+
+      </div>
+      
+      
+    </div>
+  </div>
+  <div class="row mt-5 row-cols-3">
+    <div class="col">
+      <div class="row">
+        <div class="col-12 col-md-2"><img src="https://promos.makemytrip.com/store/SingaporeDT.JPG" alt="" width="50px " height="50px" class="rounded-circle float-start"></div>
+        <div class="col-md-9 col-12"> <div class="fw-bold">Kolkata Flights</div>
+        <div class="d-none d-md-block">Lorem ipsum dolor sit amet.</div></div>
+
+      </div>
+      
+      
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="col-12 col-md-2"><img src="https://promos.makemytrip.com/store/BangaloreDT.JPG" alt="" width="50px " height="50px" class="rounded-circle float-start"></div>
+        <div class="col-md-9 col-12"> <div class="fw-bold">Bangalore Flights</div>
+
+        <div class="d-none d-md-block">Lorem ipsum dolor sit amet.</div></div>
+</div>
+      
+      
+    </div>
+    <div class="col">
+      <div class="row">
+        <div class="col-12 col-md-2"><img src="https://promos.makemytrip.com/store/JaipurDT.JPG" alt="" width="50px " height="50px" class="rounded-circle float-start"></div>
+        <div class="col-md-9 col-12"> <div class="fw-bold">Jaipur Flights</div>
+        <div class="d-none d-md-block">Lorem ipsum dolor sit amet.</div></div>
+
+      </div>
+      
+      
+    </div>
+  </div>
+ </div>
+
+
+
+  <!-- ========== End Section-8 ========== -->
+
+  <!-- ========== Start footer ========== -->
+  
+
+
+  <footer class="text-center text-lg-start bg-dark text-muted" style="margin-top: 100px;">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+      <!-- Left -->
+      <div class="me-5 d-none d-lg-block text-white">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+      
+      <!-- Right -->
+      <div class="text-white">
+        <a href="https://www.facebook.com/profile.php?id=100012351334548" target="_blank" class="me-4 text-reset">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://twitter.com/_Ganesh_Dutt" target="_blank" class="me-4 text-reset">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://www.google.com/" target="_blank" class="me-4 text-reset">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="https://www.instagram.com/the_ganesh_dutt/" target="_blank" class="me-4 text-reset">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ganesh-dutt-514a94243/" target="_blank" class="me-4 text-reset">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/ganishka100" target="_blank" class="me-4 text-reset">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right --> 
+    </section>
+    <!-- Section: Social media -->
+    
+    <!-- Section: Links  -->
+    <section class="text-white">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Royal <span class="text-danger">Yatra</span>
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+    
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Products
+            </h6>
+            <p>
+              <a href="#" class="text-reset">Angular</a>
+            </p>
+            <p>
+              <a href="#" class="text-reset">React</a>
+            </p>
+            <p>
+              <a href="#" class="text-reset">Vue</a>
+            </p>
+            <p>
+              <a href="#" class="text-reset">Laravel</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+    
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="#" class="text-reset">Enroll Now</a>
+            </p>
+            <p>
+              <a href="#" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#" class="text-reset">Free_Courses</a>
+            </p>
+            <p>
+              <a href="#" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+    
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fas fa-home me-3"></i>Birona Khurd ole Mathura 281122</p>
+            <p>
+              <i class="fas fa-envelope me-3"></i>
+             gdutt2304@gmail.com
+            </p>
+            <p><i class="fas fa-phone me-3"></i> + 91 7078-4048-37</p>
+            <p><i class="fas fa-phone me-3"></i> + 91 7088-4048-37</p>
+            <!-- <p><i class="fas fa-print me-3"></i>+ 91 </p> -->
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+    
+    <!-- Copyright -->
+    <div class="text-center p-4 text-white" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2023 All rights reserved 
+              <a class="text-reset fw-bold" href="https://ganeshdutt100.github.io/Ganesh_Portfolio/"target="_blank">GaneshDutt.com</a>
+    </div>
+  </footer>
+  <!-- Footer -->
+  <!-- ========== End footer ========== -->
+    
+</body>
+</html>
